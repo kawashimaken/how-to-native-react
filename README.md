@@ -6,7 +6,9 @@ react native development memo
 Atom
 
 ## upgrade react-native
+```
 react-native upgrade
+```
 
 see difference, press d
 
@@ -24,3 +26,11 @@ Add the following to
   
 ```
 under NSAppTransportSecurity->NSExceptionDomains
+
+## if you are using map
+
+[https://github.com/airbnb/react-native-maps](https://github.com/airbnb/react-native-maps)
+
+```
+react-native link
+```
