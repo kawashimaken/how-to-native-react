@@ -1,4 +1,4 @@
-# how-to-native-react
+# how-to-react-native
 react native development memo
 
 ## Tool
