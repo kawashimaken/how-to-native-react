@@ -27,11 +27,16 @@ Add the following to
 ```
 under NSAppTransportSecurity->NSExceptionDomains
 
-## if you are using map
+## if you are using map (or any other libraries using native code.)
 
 [https://github.com/airbnb/react-native-maps](https://github.com/airbnb/react-native-maps)
 
-```
+```bash
 react-native link
 ```
 （rnpm now is merged into react native core, so dont not use rnpm. see here [https://facebook.github.io/react-native/docs/linking-libraries-ios.html](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)）
+
+## logging
+```bash
+react-native log-ios
+```
