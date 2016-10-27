@@ -34,4 +34,4 @@ under NSAppTransportSecurity->NSExceptionDomains
 ```
 react-native link
 ```
-（rnpm now is merged into react native core, so dont not use rnpm）
+（rnpm now is merged into react native core, so dont not use rnpm. see here [https://facebook.github.io/react-native/docs/linking-libraries-ios.html](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)）
