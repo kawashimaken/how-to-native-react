@@ -34,3 +34,4 @@ under NSAppTransportSecurity->NSExceptionDomains
 ```
 react-native link
 ```
+（rnpm now is merged into react native core, so dont not use rnpm）
