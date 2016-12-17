@@ -4,10 +4,15 @@ react native development memo
 ## Tool
 
 Atom
+Sublime + babel
 
 ## upgrade react-native
 ```
 react-native upgrade
+
+npm install -g react-native-git-upgrade
+cd MyProject
+react-native-git-upgrade  //upgrade to the latest
 ```
 
 see difference, press d
@@ -40,3 +45,55 @@ react-native link
 ```bash
 react-native log-ios
 ```
+
+
+## 0.38.0  -> 0.39.0
+## upgrade react-native
+rename the project
+
+```
+react-native init AwesomeProject
+cd AwesomeProject
+react-native run-ios
+```
+copy
+```
+/app
+index.ios.js
+package.json
+```
+update the info.plist in order to make network access work at development mode.
+
+Add the following to 
+```
+<key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>localhost</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+        <key>yoursitedomain.com</key>
+        <dict>
+          <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+      </dict>
+    </dict>
+  
+```
+then
+```
+npm install -g react-native-git-upgrade
+cd MyProject
+react-native-git-upgrade  //upgrade to the latest
+npm install
+react-native link
+```
+then
+```
+react-native run-ios
+```
+you should be fine.
