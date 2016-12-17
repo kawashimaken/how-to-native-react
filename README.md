@@ -47,7 +47,7 @@ react-native log-ios
 ```
 
 
-## 0.38.0  -> 0.39.0
+# 0.38.0  -> 0.39.0
 ## upgrade react-native
 rename and backup your project, and create a new project with your previous project name, this is important
 
