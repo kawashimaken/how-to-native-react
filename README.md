@@ -49,7 +49,7 @@ react-native log-ios
 
 ## 0.38.0  -> 0.39.0
 ## upgrade react-native
-rename the project
+rename and backup your project, and create a new project with your previous project name, this is important
 
 ```
 react-native init AwesomeProject
@@ -61,6 +61,7 @@ copy
 /app
 index.ios.js
 package.json
+/.git
 ```
 update the info.plist in order to make network access work at development mode.
 
@@ -96,4 +97,11 @@ then
 ```
 react-native run-ios
 ```
-you should be fine.
+if it works ok, then
+```
+git status
+git add .
+git commit -m 'upgrade to the latest react-native version'
+git push
+```
+You should be fine.
